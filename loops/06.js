@@ -9,9 +9,9 @@
  * countDivisibleBy3(5);
  */
 export function countDivisibleBy3(input) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  let result = 0;
+  for (let i = 3; i < input; i += 3) {
+    result++;
+  }
+  return result;
 }

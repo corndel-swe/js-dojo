@@ -7,5 +7,5 @@
  * Example: ingredientAmount(2, 4) should return 8.
  */
 export function ingredientAmount(baseAmount, servings) {
-  // TODO: ???
+  return baseAmount * servings
 }

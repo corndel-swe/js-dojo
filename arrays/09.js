@@ -7,5 +7,9 @@
  * findYoungestAge([29, 31]); // returns 29
  */
 export function findYoungestAge(ages) {
-  // TODO: ???
+  // TODO: Return the smallest age
+  if (ages[0] < ages[1]){
+    return ages[0]
+  } else 
+    return ages[1]
 }

@@ -7,7 +7,9 @@
  * Example: totalPay(45, 20) should return 950.
  */
 export function totalPay(hoursWorked, hourlyRate) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  const regularHours = hoursWorked <= 40 ? hoursWorked : 40
+  const overTime = hoursWorked <= 40 ? 0 : hoursWorked - 40
+  const regularPay = regularHours * hourlyRate
+  const overtimePay = overTime * (hourlyRate * 1.5)
+  return regularPay + overtimePay
 }

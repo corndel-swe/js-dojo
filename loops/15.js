@@ -9,8 +9,9 @@
  * reverseArray([1, 2, 3, 4, 5]);
  */
 export function reverseArray(arr) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  const reversedArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    reversedArr.unshift(arr[i]);
+  }
+  return arr.reverse();
 }

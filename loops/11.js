@@ -9,8 +9,5 @@
  * sumArray([1, 2, 3, 4, 5]);
  */
 export function sumArray(arr) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  return arr.reduce((acc, curr) => (acc += curr), 0);
 }

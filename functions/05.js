@@ -7,5 +7,5 @@
  * Example: itemsPerPerson(24, 8) should return 3.
  */
 export function itemsPerPerson(totalItems, people) {
-  // TODO: ???
+  return Math.floor(totalItems / people)
 }

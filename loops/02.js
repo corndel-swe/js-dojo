@@ -9,8 +9,8 @@
  * productSmallerNumbers(5);
  */
 export function productSmallerNumbers(input) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  if (input === 1) {
+    return 1;
+  }
+  return (input - 1) * productSmallerNumbers(input - 1);
 }

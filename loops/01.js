@@ -9,8 +9,9 @@
  * sumSmallerNumbers(5);
  */
 export function sumSmallerNumbers(input) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  if (input === 0) {
+    return 0;
+  } else {
+    return input - 1 + sumSmallerNumbers(input - 1);
+  }
 }

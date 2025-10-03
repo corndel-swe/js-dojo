@@ -10,8 +10,9 @@
  * calculateInventoryValue([10, 5, 2], [20, 50, 100]);
  */
 export function calculateInventoryValue(quantities, prices) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  let result = 0
+  for(let i = 0; i < quantities.length; i++){
+    result += (quantities[i] * prices[i])
+  }
+  return result
 }

@@ -9,9 +9,5 @@
  * countPositiveReviews([5, 3, 4, 2, 5]);
  */
 export function countPositiveReviews(reviews) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  return reviews.filter(review => review >= 4).length
 }

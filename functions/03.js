@@ -7,5 +7,5 @@
  * Example: travelDistance(20, 15) should return 300.
  */
 export function travelDistance(fuelAmount, fuelEfficiency) {
-  // TODO: ???
+  return fuelAmount * fuelEfficiency
 }

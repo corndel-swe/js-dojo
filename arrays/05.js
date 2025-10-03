@@ -6,7 +6,8 @@
  * firstAndLastName(['Alice', 'Bob', 'Charlie', 'David', 'Eve']); // returns ['Alice', 'Eve']
  */
 export function firstAndLastName(names) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  // TODO: Get the first element from the array
+  // TODO: Get the last element from the array
+  // TODO: Return an array containing the first and last elements
+  return [names[0], names[names.length -1]]
 }

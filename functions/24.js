@@ -6,5 +6,5 @@
  * Example: dayType('Saturday') should return 'Weekend'.
  */
 export function dayType(day) {
-  // TODO: ???
+  return ['Saturday', 'Sunday'].includes(day) ? 'Weekend' : 'Weekday'
 }

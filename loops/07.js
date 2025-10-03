@@ -9,10 +9,8 @@
  * sumOfDigits(123);
  */
 export function sumOfDigits(num) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  return num
+    .toString()
+    .split("")
+    .reduce((acc, curr) => (acc += parseInt(curr)), 0);
 }

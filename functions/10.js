@@ -7,5 +7,5 @@
  * Example: canGoPicnic(true, true) should return true.
  */
 export function canGoPicnic(isSunny, isWeekend) {
-  // TODO: ???
+  return isSunny && isWeekend
 }

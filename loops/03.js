@@ -9,9 +9,9 @@
  * sumEvenNumbers(5);
  */
 export function sumEvenNumbers(input) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  let result = 0;
+  for (let i = 2; i < input; i += 2) {
+    result += i;
+  }
+  return result;
 }

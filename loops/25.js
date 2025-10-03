@@ -9,10 +9,9 @@
  * rowSums([[1, 2, 3], [4, 5], [6]]);
  */
 export function rowSums(arr) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  const sums = []
+  for(let i = 0; i < arr.length; i++){
+    sums.push(arr[i].reduce((acc, curr) => acc += curr, 0))
+  }
+  return sums
 }

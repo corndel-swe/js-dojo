@@ -15,8 +15,9 @@ export function calculatePopulationGrowth(
   growthRate,
   years
 ) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  let result = initialPopulation;
+  for (let i = 0; i < years; i++) {
+    result += growthRate * result;
+  }
+  return result;
 }

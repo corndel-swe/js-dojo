@@ -6,5 +6,5 @@
  * Example: isEven(4) should return true.
  */
 export function isEven(num) {
-  // TODO: ???
+  return num % 2 === 0
 }

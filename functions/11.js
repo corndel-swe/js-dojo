@@ -7,6 +7,5 @@
  * Example: adjustedSalary(50000, 10) should return 45000.
  */
 export function adjustedSalary(salary, taxRate) {
-  // TODO: ???
-  // TODO: ???
+  return salary * ((100 - taxRate) / 100)
 }

@@ -9,9 +9,8 @@
  * calculateAverage([1, 2, 3, 4, 5]);
  */
 export function calculateAverage(arr) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  const total = arr.reduce((acc, curr) => (acc += curr), 0);
+  const noOfItems = arr.length;
+  const average = total / noOfItems;
+  return arr.length > 0 ? average : 0;
 }

@@ -9,9 +9,9 @@
  * calculateEngagement([[5, 5, 5], [10, 10, 10]]);
  */
 export function calculateEngagement(posts) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  const totalEngagements = []
+  for(let i = 0; i < posts.length; i++){
+    totalEngagements.push(posts[i].reduce((acc, curr) => acc += curr, 0))
+  }
+  return totalEngagements
 }

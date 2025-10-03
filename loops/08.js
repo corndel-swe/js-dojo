@@ -11,8 +11,9 @@
  * calculateCompoundInterest(100, 0.05, 2);
  */
 export function calculateCompoundInterest(principal, rate, periods) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  let result = principal;
+  for (let i = 0; i < periods; i++) {
+    result += rate * result;
+  }
+  return result;
 }

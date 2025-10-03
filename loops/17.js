@@ -10,8 +10,5 @@
  * findIndex([1, 2, 3, 4, 5], 3);
  */
 export function findIndex(arr, element) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  return arr.findIndex((number) => number === element);
 }

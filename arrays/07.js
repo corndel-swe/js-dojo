@@ -6,6 +6,9 @@
  * extractWeekdays([15, 16, 18, 20, 21, 19, 17]); // returns [15, 16, 18, 20, 21]
  */
 export function extractWeekdays(temps) {
-  // TODO: ???
-  // TODO: ???
+  // TODO: Use the slice() method to get the first 5 elements of the array
+  // TODO: Return the new array containing only the weekdays
+
+  let substr = temps.slice(0, 5);
+  return substr;
 }

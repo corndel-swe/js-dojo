@@ -8,5 +8,9 @@
  * Example: compoundInterest(1000, 0.05, 10) should return 1628.89 (approximately).
  */
 export function compoundInterest(principal, rate, time) {
-  // TODO: ???
+  let result = principal;
+  for (let i = 0; i < time; i++) {
+    result += rate * result;
+  }
+  return result;
 }

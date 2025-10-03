@@ -7,8 +7,10 @@
  * updateTemperatures([59, 65, 72, 50], 68); // returns [18.3333, 22.2222, 20]
  */
 export function updateTemperatures(tempsFahrenheit, newTempFahrenheit) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  // TODO: Use the push() method to add the new temperature to the array
+  // TODO: Use the filter() method to keep temperatures that are 60 or above
+  // TODO: Use the map() method to convert each remaining temperature to Celsius using the formula: (Fahrenheit - 32) * 5/9
+  // TODO: Return the new array of modified temperatures in Celsius
+  tempsFahrenheit.push(newTempFahrenheit)
+  return tempsFahrenheit.filter(temp => temp >= 60).map(temp => (temp - 32)*5/9 )
 }

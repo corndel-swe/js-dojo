@@ -9,9 +9,9 @@
  * stringOfNums(5);
  */
 export function stringOfNums(num) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  let resultStr = "";
+  for (let i = 1; i <= num; i++) {
+    resultStr += i.toString();
+  }
+  return resultStr;
 }

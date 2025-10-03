@@ -6,5 +6,9 @@
  * Example: isLeapYear(2020) should return true.
  */
 export function isLeapYear(year) {
-  // TODO: ???
+  if (year % 100 === 0 && year % 400 !== 0) {
+    return false;
+  } else {
+    return year % 4 === 0;
+  }
 }

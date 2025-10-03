@@ -7,5 +7,5 @@
  * Example: canOpenBankAccount(20, true) should return true.
  */
 export function canOpenBankAccount(age, isResident) {
-  // TODO: ???
+  return age >= 18 && isResident
 }

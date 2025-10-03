@@ -8,5 +8,5 @@
  * Example: isBetween(5, 1, 10) should return true.
  */
 export function isBetween(num, lower, upper) {
-  // TODO: ???
+  return num > lower && num < upper
 }

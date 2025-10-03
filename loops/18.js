@@ -10,9 +10,5 @@
  * filterExpensiveProducts([50, 150, 100, 200], 100);
  */
 export function filterExpensiveProducts(prices, maxPrice) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  return prices.filter(price => price <= maxPrice)
 }

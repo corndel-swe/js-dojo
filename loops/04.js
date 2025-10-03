@@ -9,9 +9,9 @@
  * sumOddNumbers(6);
  */
 export function sumOddNumbers(input) {
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
-  // TODO: ???
+  let result = 0;
+  for (let i = 1; i < input; i += 2) {
+    result += i;
+  }
+  return result;
 }
