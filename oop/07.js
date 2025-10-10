@@ -7,6 +7,8 @@ export class Car {
    * @param {string} model - The car's model (e.g., "Camry").
    */
   constructor(make, model) {
+    this.make = make
+    this.model = model
     // TODO: Store make and model as properties.
   }
 
@@ -19,6 +21,7 @@ export class Car {
    * new Car("Toyota", "Camry").getFullName();
    */
   getFullName() {
+    return this.make + ' ' + this.model
     // TODO: Return a string with make and model separated by a space.
   }
 }
