@@ -6,6 +6,8 @@ export class Playlist {
    * @param {string} name - The playlist name.
    */
   constructor(name) {
+    this.name = name
+    this.songs = []
     // TODO: Store name as a property.
     // TODO: Initialize an empty array for songs.
   }
@@ -15,6 +17,7 @@ export class Playlist {
    * @param {string} song - The song name.
    */
   addSong(song) {
+    this.songs.push(song)
     // TODO: Add the song to the songs array.
   }
 
@@ -23,6 +26,7 @@ export class Playlist {
    * @param {string} song - The song name to remove.
    */
   removeSong(song) {
+    this.songs = this.songs.filter(songInSongs => songInSongs !== song)
     // TODO: Remove the song from the array using filter or splice.
   }
 
@@ -31,6 +35,7 @@ export class Playlist {
    * @returns {string[]} - Array of song names.
    */
   getSongs() {
+    return this.songs
     // TODO: Return the songs array.
   }
 
@@ -40,6 +45,7 @@ export class Playlist {
    * @returns {boolean} - True if the song exists.
    */
   hasSong(song) {
+    return this.songs.some((songInArr) => songInArr === song)
     // TODO: Check if the song is in the array.
   }
 }
