@@ -9,4 +9,5 @@ export function startSum(prices) {
   // TODO: Get the first element from the array
   // TODO: Get the second element from the array
   // TODO: Return the sum of the first and second elements
+  return prices[0] + prices[1];
 }

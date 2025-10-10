@@ -8,4 +8,5 @@
 export function filterMultiplesOfThree(numbers) {
   // TODO: Use the filter() method to get numbers that are multiples of 3
   // TODO: Return the new array of filtered numbers
+  return numbers.filter(number => number % 3 === 0)
 }

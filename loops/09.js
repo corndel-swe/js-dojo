@@ -15,8 +15,9 @@ export function calculatePopulationGrowth(
   growthRate,
   years
 ) {
-  // TODO: Initialize a variable to hold the population.
-  // TODO: Use a for loop to iterate over the number of years.
-  // TODO: For each year, multiply the population by (1 + growthRate).
-  // TODO: Return the population.
+  let result = initialPopulation;
+  for (let i = 0; i < years; i++) {
+    result += growthRate * result;
+  }
+  return result;
 }
