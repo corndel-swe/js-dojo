@@ -3,6 +3,7 @@
  */
 export class ShoppingCart {
   constructor() {
+    this.items = []
     // TODO: Initialize an empty array for items.
   }
 
@@ -11,6 +12,7 @@ export class ShoppingCart {
    * @param {Object} item - An item with name and price properties.
    */
   addItem(item) {
+    this.items.push(item)
     // TODO: Add the item to the items array.
   }
 
@@ -25,6 +27,7 @@ export class ShoppingCart {
    * cart.getTotal(); // returns 3.5
    */
   getTotal() {
+    return this.items.reduce((acc, item) => acc + item.price, 0)
     // TODO: Sum up the price of all items and return the total.
   }
 }
