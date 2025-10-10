@@ -7,13 +7,15 @@ export class Circle {
    */
   constructor(radius) {
     // TODO: Store the radius as a property.
+     this.radius = radius
   }
 
   /**
    * Calculates the area of the circle.
    * @returns {number} - The area (π * r²).
    */
-  getArea() {
+  getArea(radius) {
+    return Math.PI * this.radius ** 2
     // TODO: Return the area using Math.PI.
   }
 }
