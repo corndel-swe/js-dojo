@@ -3,6 +3,7 @@
  */
 export class Library {
   constructor() {
+    this.books = new Map()
     // TODO: Initialize a Map to store books with ISBN as key.
   }
 
@@ -12,6 +13,7 @@ export class Library {
    * @param {Object} book - The book object with title and author.
    */
   addBook(isbn, book) {
+    this.books.set(isbn, book)
     // TODO: Add the book to the Map using isbn as the key.
   }
 
@@ -21,6 +23,7 @@ export class Library {
    * @returns {Object|undefined} - The book object or undefined.
    */
   getBook(isbn) {
+    return this.books.get(isbn)
     // TODO: Return the book from the Map.
   }
 
@@ -30,6 +33,7 @@ export class Library {
    * @returns {boolean} - True if the book was removed.
    */
   removeBook(isbn) {
+    return this.books.delete(isbn)
     // TODO: Remove the book from the Map and return the result.
   }
 
@@ -38,6 +42,7 @@ export class Library {
    * @returns {number} - The number of books.
    */
   getTotalBooks() {
+    return this.books.size
     // TODO: Return the size of the Map.
   }
 }
