@@ -7,6 +7,7 @@ export class BankAccount {
    */
   constructor(initialBalance) {
     // TODO: Store the balance as a property.
+    this.balance = initialBalance
   }
 
   /**
@@ -14,6 +15,7 @@ export class BankAccount {
    * @param {number} amount - The amount to deposit.
    */
   deposit(amount) {
+    this.balance += amount
     // TODO: Add the amount to the balance.
   }
 
@@ -22,6 +24,7 @@ export class BankAccount {
    * @param {number} amount - The amount to withdraw.
    */
   withdraw(amount) {
+    this.balance -= amount
     // TODO: Subtract the amount from the balance.
   }
 
@@ -30,6 +33,7 @@ export class BankAccount {
    * @returns {number} - The current balance.
    */
   getBalance() {
+    return this.balance
     // TODO: Return the balance.
   }
 }

@@ -9,6 +9,10 @@
  * createGreeter("Alice").greet();
  */
 export function createGreeter(name) {
-  // TODO: Create an object with a name property and a greet method.
-  // TODO: The greet method should return "Hello, my name is [name]"
+  return {
+    name,
+    greet() {
+      return `Hello, my name is ${name}`;
+    },
+  };
 }

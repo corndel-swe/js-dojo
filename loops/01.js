@@ -9,8 +9,9 @@
  * sumSmallerNumbers(5);
  */
 export function sumSmallerNumbers(input) {
-  // TODO: Initialize a variable to hold the sum.
-  // TODO: Use a for loop to iterate from 1 to one less than the input number.
-  // TODO: Add each number to the sum variable.
-  // TODO: Return the sum.
+  if (input === 0) {
+    return 0;
+  } else {
+    return input - 1 + sumSmallerNumbers(input - 1);
+  }
 }

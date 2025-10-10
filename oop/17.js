@@ -13,6 +13,7 @@ export class MathUtils {
    * MathUtils.max(5, 10);
    */
   static max(a, b) {
+    return a > b ? a : b
     // TODO: Return the larger of the two numbers.
   }
 
@@ -23,6 +24,7 @@ export class MathUtils {
    * @returns {number} - The minimum value.
    */
   static min(a, b) {
+    return a > b ? b : a
     // TODO: Return the smaller of the two numbers.
   }
 }

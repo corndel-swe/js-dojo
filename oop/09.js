@@ -6,6 +6,7 @@ export class Temperature {
    * @param {number} celsius - The temperature in Celsius.
    */
   constructor(celsius) {
+    this.celsius = celsius
     // TODO: Store celsius as a property.
   }
 
@@ -18,6 +19,7 @@ export class Temperature {
    * new Temperature(0).toFahrenheit();
    */
   toFahrenheit() {
+    return (this.celsius * 9/5) + 32
     // TODO: Return celsius converted to Fahrenheit using the formula: (celsius * 9/5) + 32
   }
 }

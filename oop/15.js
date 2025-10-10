@@ -7,6 +7,7 @@ export class Shape {
    * @returns {number} - The area.
    */
   getArea() {
+    return 0
     // TODO: Return 0 as a default implementation.
   }
 }
@@ -20,6 +21,9 @@ export class Rectangle extends Shape {
    * @param {number} height - The rectangle's height.
    */
   constructor(width, height) {
+    super()
+    this.width = width
+    this.height = height
     // TODO: Call super() to invoke the parent constructor.
     // TODO: Store width and height as properties.
   }
@@ -29,6 +33,7 @@ export class Rectangle extends Shape {
    * @returns {number} - The area.
    */
   getArea() {
+    return this.width * this.height
     // TODO: Return width * height.
   }
 }

@@ -7,6 +7,9 @@ export class BankAccount {
    * @param {number} initialBalance - The starting balance.
    */
   constructor(accountNumber, initialBalance) {
+    this.accountNumber = accountNumber;
+    this.balance = initialBalance;
+    this.transactionHistory = [];
     // TODO: Store accountNumber and balance as properties.
     // TODO: Initialize an empty array for transaction history.
   }
@@ -16,6 +19,8 @@ export class BankAccount {
    * @param {number} amount - The amount to deposit.
    */
   deposit(amount) {
+    this.balance += amount;
+    this.transactionHistory.push({ type: "deposit", amount, date: new Date() });
     // TODO: Add amount to balance.
     // TODO: Add a transaction object to history: { type: 'deposit', amount, date: new Date() }
   }
@@ -26,6 +31,17 @@ export class BankAccount {
    * @returns {boolean} - True if successful, false if insufficient funds.
    */
   withdraw(amount) {
+    if (this.balance >= amount) {
+      this.balance -= amount;
+      this.transactionHistory.push({
+        type: "withdraw",
+        amount,
+        date: new Date(),
+      });
+      return true;
+    } else {
+      return false;
+    }
     // TODO: Check if balance >= amount.
     // TODO: If yes, subtract amount and add transaction to history.
     // TODO: Return true if successful, false otherwise.
@@ -36,6 +52,7 @@ export class BankAccount {
    * @returns {Object[]} - Array of transaction objects.
    */
   getTransactionHistory() {
+    return this.transactionHistory
     // TODO: Return the transaction history array.
   }
 
@@ -44,6 +61,7 @@ export class BankAccount {
    * @returns {number} - The current balance.
    */
   getBalance() {
+    return this.balance
     // TODO: Return the balance.
   }
 }

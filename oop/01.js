@@ -10,5 +10,5 @@
  * createPerson("Alice", 30);
  */
 export function createPerson(name, age) {
-  // TODO: Create and return an object with name and age properties.
+  return { name, age };
 }
