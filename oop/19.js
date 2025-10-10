@@ -7,6 +7,8 @@ export class Vector2D {
    * @param {number} y - The y component.
    */
   constructor(x, y) {
+    this.x = x
+    this.y = y
     // TODO: Store x and y as properties.
   }
 
@@ -21,6 +23,7 @@ export class Vector2D {
    * const v3 = v1.add(v2); // v3 is (4, 6)
    */
   add(other) {
+    return new Vector2D(this.x + other.x, this.y + other.y)
     // TODO: Return a new Vector2D with x and y components added.
   }
 
