@@ -7,6 +7,8 @@ export class Point {
    * @param {number} y - The y coordinate.
    */
   constructor(x, y) {
+    this.x = x
+    this.y = y
     // TODO: Store x and y as properties.
   }
 
@@ -21,6 +23,7 @@ export class Point {
    * p1.distanceTo(p2); // returns 5
    */
   distanceTo(other) {
+    return Math.sqrt(Math.pow(other.x - this.x, 2) + Math.pow(other.y - this.y, 2))
     // TODO: Calculate distance using the formula: sqrt((x2-x1)² + (y2-y1)²)
     // TODO: Use Math.sqrt and Math.pow
   }
