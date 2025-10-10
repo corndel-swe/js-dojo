@@ -8,6 +8,9 @@ export class Book {
    * @param {number} pages - The number of pages.
    */
   constructor(title, author, pages) {
+    this.title = title
+    this.author = author
+    this.pages = pages
     // TODO: Store title, author, and pages as properties.
   }
 
@@ -20,6 +23,7 @@ export class Book {
    * new Book("1984", "George Orwell", 328).getSummary();
    */
   getSummary() {
+    return this.title + ' by ' + this.author + ', ' + this.pages + ' pages'
     // TODO: Return a string in the format "[title] by [author], [pages] pages"
   }
 }
