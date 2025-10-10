@@ -32,6 +32,7 @@ export class Vector2D {
    * @returns {number} - The magnitude.
    */
   magnitude() {
+    return Math.sqrt(Math.pow(this.x, 2) + Math.pow(this.y, 2))
     // TODO: Return sqrt(x² + y²) using Math.sqrt and Math.pow.
   }
 }
